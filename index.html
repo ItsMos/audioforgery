@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Recording Web App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="output.css">
+</head>
+<!-- component -->
+<body class="antialiased bg-slate-200 text-slate-700 mx-2">
+  <div class="max-w-lg mx-auto my-10">
+    <!-- Sound Effects List -->
+    <div class="bg-white p-8 rounded-xl shadow shadow-slate-300">
+      <h1 class="text-3xl font-medium text-center">1. Choose Background Sound</h1>
+      <div class="mt-5 overflow-y-scroll h-44">
+
+        <!-- Sound Effect 1 -->
+        <div class="sound-effect selected" data-sound="rain">
+          <div class="inline-flex items-center space-x-2">
+            <button class="preview">
+              <i class="fa-regular fa-circle-play text-xl text-slate-500 hover:text-indigo-600"></i>
+            </button>
+            <div>Rain and Thunder</div>
+          </div>
+        </div>
+
+        <!-- Sound Effect 2 -->
+        <div class="sound-effect" data-sound="highway">
+          <div class="inline-flex items-center space-x-2">
+            <button class="preview">
+              <i class="fa-regular fa-circle-play text-xl text-slate-500 hover:text-indigo-600"></i>
+            </button>
+            <div>Highway</div>
+          </div>
+        </div>
+
+        <div class="sound-effect" data-sound="siren-nyc">
+          <div class="inline-flex items-center space-x-2">
+            <button class="preview">
+              <i class="fa-regular fa-circle-play text-xl text-slate-500 hover:text-indigo-600"></i>
+            </button>
+            <div>NYC Siren</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Recording Section -->
+    <div class="recording-section bg-white p-8 rounded-xl shadow shadow-slate-300 mt-5">
+      <h2 class="text-xl font-medium text-center">2. Record Your Voice</h2>
+      <button id="record-button" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded w-full mt-3">Record</button>
+      <p id="recording-duration" class="text-center mt-3 text-sm text-slate-600"></p>
+    </div>
+    <div class="flex">
+      <button id="play-button" class="bg-blue-500 hover:bg-blue-600 disabled:bg-gray-300 text-white py-2 px-4 rounded w-full" disabled>Play / Pause</button>
+      <button id="download-button" class="bg-green-500 hover:bg-green-600 disabled:bg-gray-300 text-white py-2 px-4 rounded w-full" disabled>Download</button>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

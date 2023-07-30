@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sound-effect {
+    @apply cursor-pointer flex justify-between items-center py-1 px-2 border-l-4 border-l-transparent bg-gradient-to-r from-transparent to-transparent hover:from-slate-100 transition ease-linear duration-150;
+  }
+  .sound-effect.selected {
+    @apply border-b border-slate-200 border-l-indigo-300 from-indigo-100 hover:from-indigo-200;
+  }
+}

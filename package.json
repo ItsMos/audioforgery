@@ -1,0 +1,14 @@
+{
+  "name": "audioforgery.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./style.css -o ./output.css --watch"
+  },
+  "author": "Mos",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
