@@ -48,12 +48,14 @@ let mediaRecorder
 recordButton.addEventListener('click', async () => {
   recording = !recording
   if (recording) {
+    recordButton.setAttribute('disabled', true)
     downloadButton.setAttribute('disabled', true)
     playButton.setAttribute('disabled', true)
-    recordingDuration = 0;
-    recordingInterval = setInterval(updateRecordingDuration, 1000); // Update the recording duration every second
     recordButton.textContent = 'Stop'
     navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
+      recordButton.removeAttribute('disabled')
+      recordingDuration = 0;
+      recordingInterval = setInterval(updateRecordingDuration, 1000); // Update the recording duration every second
       mediaRecorder = new MediaRecorder(stream)
       const chunks = []
       let recStartTime
