@@ -1,0 +1,6 @@
+site by Mostafa Mahmoud https://itsmos.netlify.app/
+User-agent: Googlebot
+Disallow: 
+User-agent: *
+Disallow: 
+Disallow: /audio/
