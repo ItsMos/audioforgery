@@ -1,5 +1,16 @@
 {
   "rain": "flathill_rain_thunder.wav",
   "highway": "highway-14475.mp3",
-  "siren-nyc": "siren-in-nyc.mp3"
+  "siren-nyc": "siren-in-nyc.mp3",
+  "airport": "airport-check-in-soundmary.wav",
+  "airport2": "airport-ambiance.mp3",
+  "beach": "birds-sunrise-portete-beach-16934.mp3",
+  "park": "nyc-chinatown-park-bench-52708.mp3",
+  "car-acc": "car-acceleration-inside-car-7087.mp3",
+  "crowd-cheering": "large-crowd-applause-6250.mp3",
+  "police-scanner": "los-angeles-south-bay-police-and-fire-scanner-14646.mp3",
+  "busy-diner": "nyc-diner-2-ambience-ambiance-by-edlundart-17933.mp3",
+  "nyc-subway": "nyc-subway_57to42-st_rattles-rumbles-pa-doors-fs-vox_fs4824-17547.mp3",
+  "busy-street": "recording-of-busy-new-york-city-street-18289.mp3",
+  "timessquare": "timessquare-18597.mp3"
 }

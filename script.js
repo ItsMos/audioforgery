@@ -31,7 +31,7 @@ previewAudio.oncanplay = () => {
   previewAudio.play()
   previewTimeout = setTimeout(() => {
     previewAudio.pause()
-  }, 3000)
+  }, 5000)
 }
 
 document.querySelectorAll('.preview').forEach(btn => {
